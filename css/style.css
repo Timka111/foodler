@@ -93,7 +93,7 @@ body {
   margin-top: 60px;
 }
 .pomo__container {
-  width: 1100px;
+  max-width: 1100px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -109,6 +109,11 @@ label {
 .label__menu {
   width: 30px;
   height: 25px;
+}
+@media screen and (max-width: 623px) {
+  .pomo__container {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -154,7 +159,6 @@ label {
   display: flex;
 }
 .menu__title {
-  text-align: left;
   margin-bottom: 30px;
   font-size: 30px;
 }
@@ -209,6 +213,11 @@ label {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 1120px) {
+  .menu__card {
+    margin-right: 50px;
+  }
+}
 @media screen and (max-width: 720px) {
   .menu__card {
     margin-right: 30px;
@@ -217,7 +226,7 @@ label {
     justify-content: center;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 560px) {
   .menu__card {
     margin-right: 0;
   }
