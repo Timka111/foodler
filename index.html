@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,31 +18,36 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>Foodler</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <div class="header__up">
-          <ul class="header__list">
-            <li class="list__item"><img src="img/logo.svg" alt="" /></li>
-            <li class="list__item">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <h3 class="header__title">Molodechno</h3>
-            </li>
-            <li class="list__item">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <h3 class="header__title">+375(33)355-66-99</h3>
-            </li>
-            <li class="list__item">
-              <i class="fa fa-truck" aria-hidden="true"></i>
-              <h3 class="header__title">С 10:00 до 23:00</h3>
-            </li>
-            <li class="list__item">
-              <a href="#" class="header__button">Войти</a>
-            </li>
-          </ul>
-        </div>
+        <nav class="nav">
+          <input type="checkbox" name="menu" id="btn-menu" />
+          <label class="label" for="btn-menu">btn menu</label>
+
+          <div id="up" class="header__up">
+            <ul id="ul" class="header__list">
+              <li class="list__item"><img src="img/logo.svg" alt="" /></li>
+              <li class="list__item">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <h3 class="header__title">Molodechno</h3>
+              </li>
+              <li class="list__item">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <h3 class="header__title">+375(33)355-66-99</h3>
+              </li>
+              <li class="list__item">
+                <i class="fa fa-truck" aria-hidden="true"></i>
+                <h3 class="header__title">С 10:00 до 23:00</h3>
+              </li>
+              <li class="list__item">
+                <a href="#" class="header__button">Войти</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <div class="header__bottom">
           <div class="header__bottom__container">
             <a href="#" class="header__bottom__button">Корзина | 0</a>
