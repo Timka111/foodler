@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/slider.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -58,9 +59,18 @@
         </div>
       </header>
 
-      <div class="slider__header">
-        <div class="slide">
-          <img class="slide__img" src="img/slider1.png" alt="" />
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/slider.png" alt="" class="slider__img__da" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider1.png" alt="" class="slider__img__da" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider3.png" alt="" class="slider__img__da" />
+          </div>
         </div>
       </div>
 
@@ -199,5 +209,7 @@
         </div>
       </div>
     </div>
+    <script src="script/slider.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>
