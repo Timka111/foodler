@@ -7,6 +7,44 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+.main__btn {
+  position: fixed;
+  right: 0px;
+  bottom: 130px;
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  color: black;
+  font-size: 30px;
+  line-height: 1;
+  border: 1px solid black;
+  z-index: 10;
+  transform: rotate(-90deg);
+  border-radius: 50%;
+  transition: background-color 0.5s;
+}
+.main__btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.hidden {
+  display: none !important;
+}
+.vop {
+  transform: rotate(270deg);
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #376dbf;
+  right: -52px;
+  top: 250px;
+  position: fixed;
+  z-index: 9999999;
+  color: #fff;
+  cursor: pointer;
+}
 .container {
   max-width: 2440px;
   text-align: center;
@@ -223,6 +261,12 @@ label {
 @media screen and (max-width: 1120px) {
   .menu__card {
     margin-right: 50px;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .menu__card {
+    margin-right: 30px;
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 720px) {
